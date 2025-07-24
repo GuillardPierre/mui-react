@@ -13,7 +13,7 @@ export default function CardStatsDisplay() {
   ];
 
   return (
-    <Grid container size={12} spacing={2}>
+    <Grid container size={12} spacing={4}>
       {cardStatsData.map((card) => (
         <Grid key={card.label} item size={4}>
           <CardStat card={card} />

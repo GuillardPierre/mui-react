@@ -1,5 +1,6 @@
 import { Container } from "@mui/material";
 import CardStatsDisplay from "./CardStatsDisplay";
+import ChartDisplay from "./ChartDisplay";
 
 export default function Dashboard() {
   return (
@@ -13,6 +14,7 @@ export default function Dashboard() {
       }}
     >
       <CardStatsDisplay />
+      <ChartDisplay />
     </Container>
   );
 }
