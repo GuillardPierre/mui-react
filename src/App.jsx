@@ -4,7 +4,7 @@ import CustomDrawer from "./components/Drawer";
 import Header from "./components/Header";
 
 function App() {
-  const drawerWidth = 90;
+  const drawerWidth = 80;
   return (
     <>
       <CustomDrawer width={drawerWidth} />

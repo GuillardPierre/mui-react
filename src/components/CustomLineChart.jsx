@@ -4,15 +4,23 @@ import { LineChart } from "@mui/x-charts";
 export default function CustomLineChart({ data }) {
   return (
     <Box sx={{ width: 500 }}>
-      <Typography sx={{ fontWeight: "bold" }}>{data.title}</Typography>
+      <Typography sx={{ fontSize: "1.4rem", fontWeight: "bold" }}>
+        {data.title}
+      </Typography>
       <LineChart
         height={300}
         width={500}
+        sx={{
+          "& .MuiLineElement-root": {
+            strokeWidth: 3,
+          },
+        }}
+        slotProps={{ line: { width: "12px" } }}
         series={[
           {
             data: data.value,
             connectNulls: true,
-            color: "lightblue",
+            color: "#84D6D5",
           },
         ]}
         xAxis={[{ scaleType: "point", data: data.xlabel }]}

@@ -2,7 +2,10 @@ import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 
 export default function CardStat({ card }) {
   return (
-    <Card>
+    <Card
+      variant="outlined"
+      sx={{ boxShadow: " rgba(0, 0, 0, 0.24) 0px 2px 2px" }}
+    >
       <CardContent
         sx={{
           display: "flex",

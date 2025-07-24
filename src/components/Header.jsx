@@ -5,13 +5,12 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
-import CustomDrawer from "./Drawer";
 
 export default function Header() {
   return (
     <>
       <AppBar position="static">
-        <Container>
+        <Container maxWidth={null}>
           <Toolbar
             disableGutters
             sx={{ display: "flex", justifyContent: "space-between" }}
